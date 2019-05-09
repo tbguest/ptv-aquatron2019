@@ -46,7 +46,7 @@ plt.tight_layout()
 # plt.draw()
 plt.xlim([1400, im.shape[1]])
 plt.ylim([1000, 800])
-# plt.xlim([0, 250])
+# plt.xlim([0ker, 250])
 # plt.ylim([1000, 900])
 plt.show()
 
@@ -54,7 +54,15 @@ x = plt.ginput(2)
 
 x
 
+
 # compute angle:
 jet_angle = math.atan((x[0][1] - x[1][1])/(x[1][0] - x[0][0]))
 
 jet_angle*180/np.pi
+
+# compute jet origin: at image edge, roughly at pipe outflow
+# (where x=1640)
+m = (x[1][1] - x[0][1])/(x[1][0] - x[0][0])
+b = (x[0][1]) - m*x[0][0]
+y = m*1640 + b
+y
