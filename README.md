@@ -11,3 +11,5 @@
 ### Aside: calibration/ginput steps (to be done first)
 - extract images from high light videos from each picam, where the vectrino mounting bracket can be seen. Use one of each of these images in `extract_jetangle.py` to determine the angle of the jet relative to the camera frame.
 - extract images from the last videos logged -- containing the calibration broomstick (135 cm length). Run `extract_scaling.py` to come up with a scale factor (m/pixel).
+
+## Import conda environment `environment.yml` if starting fresh

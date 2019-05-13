@@ -67,12 +67,15 @@ homechar = "C:\\"
 # day = "April10"
 day = "April11"
 
+# 70%
+vid = "pi71_1554993824"
+
 # vid = "pi71_1554994358" # ?
 # vid = "pi71_1554994823" # 70% flow?
 # vid = "pi71_1554995860" # 70?
 
 # 100%
-vid = "pi71_1554997692"
+# vid = "pi71_1554997692"
 
 
 imgdir = os.path.join(homechar, "Projects", "ptv-aquatron2019", "data", "interim", \
@@ -107,7 +110,7 @@ t = tp.link_df(f, 9, memory=5)
 t1 = tp.filter_stubs(t, 50)
 
 # save in python and matlab readable formats
-scipy.io.savemat(os.path.join(homechar, "Projects", "Aquatron2019_April", "data", \
+scipy.io.savemat(os.path.join(homechar, "Projects", "ptv-aquatron2019", "data", \
         "processed", vid + ".mat"), {'cork_traj':t1.to_dict("list")})
-t1.to_pickle(os.path.join(homechar, "Projects", "Aquatron2019_April", "data", \
+t1.to_pickle(os.path.join(homechar, "Projects", "ptv-aquatron2019", "data", \
         "processed", vid + ".pkl"))  # where to save it, usually as a .pkl

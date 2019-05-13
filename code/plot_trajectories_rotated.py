@@ -26,7 +26,7 @@ homechar = "C:\\"
 # # 70% flow
 # vid = "pi71_1554992783"
 # vid = "pi73_1554992784"
-# vid = "pi71_1554993824" # yes
+vid = "pi71_1554993824" # yes
 # vid = "pi73_1554993823"
 # # 80% flow
 # vid = "pi71_1554994358" # yes
@@ -34,7 +34,7 @@ homechar = "C:\\"
 # vid = "pi71_1554994823" # yes
 # vid = "pi73_1554994822"
 # # 90% flow
-vid = "pi71_1554995860" # yes
+# vid = "pi71_1554995860" # yes
 # vid = "pi73_1554995859"
 # vid = "pi71_1554996417"
 # vid = "pi73_1554996416"
@@ -46,9 +46,9 @@ vid = "pi71_1554995860" # yes
 # vid = "pi71_1554997998" # yes - long deployment
 # vid = "pi73_1554997995"
 
-# flow = "flow70"
+flow = "flow70"
 # flow = "flow80"
-flow = "flow90"
+# flow = "flow90"
 # flow = "flow100"
 
 pinum = vid[2:4]
