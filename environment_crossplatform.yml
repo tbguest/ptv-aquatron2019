@@ -1,0 +1,13 @@
+name: aquatron_ptv
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - pillow
+  - pims
+  - trackpy
+  - opencv=3.4.2
+  - scipy
+
